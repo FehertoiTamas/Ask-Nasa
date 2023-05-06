@@ -1,0 +1,36 @@
+.header {
+  min-height: 50px;
+  background-color: #242526;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Yeseva One";
+  color: white;
+}
+
+@media (min-width: 450px) {
+  .logo {
+    margin-left: 20px;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "Yeseva One";
+  font-size: 19px;
+  padding: 10px 15px;
+  font-weight: 500;
+  color: #F1F2F3;
+}
+
+.navbar a:hover {
+  color: #09d3ac;
+}
