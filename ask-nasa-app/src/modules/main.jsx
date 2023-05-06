@@ -1,5 +1,7 @@
+import DatePicker from './datePicker';
 import './main.css'
 import { useEffect, useState } from "react";
+
 
 function Main() {
   const URL = "https://api.nasa.gov/planetary/apod";
@@ -22,10 +24,11 @@ function Main() {
 
   console.log(data)
   if(loading) return <h1>Loading...</h1>
- 
+
+  
   return (
     <main>
-        <input type='date'></input>
+        <DatePicker />
         <img src={data.url} alt={data.title} />
         <h3 className="title">{data.title}</h3>
         <p><i>{data.copyright}</i></p>
