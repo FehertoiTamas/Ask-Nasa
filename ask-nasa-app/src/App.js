@@ -1,11 +1,9 @@
-import Header from './modules/header';
-import Main from './modules/main';
+import Home from './modules/pages/Home';
 
 function App() {
   return (
     <div className='app'>
-      <Header />
-      <Main />
+      <Home />
     </div>
   );
 }
